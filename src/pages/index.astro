@@ -9,6 +9,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      a {
+        color: rgb(var(--gray-dark));
+      }
+    </style>
   </head>
   <body>
     <Header />
@@ -19,7 +24,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
       </p>
       <p>
         With this site, I aim to cover the topics and areas that we missed out
-        on - credit cards, investing for retirement, taxes, etc...
+        on - <a href="/credit-cards">credit cards</a> , <a href="/investing"
+          >investing for retirement</a
+        > , <a href="/taxes">taxes</a>, <a href="/insurance">insurance</a>,
+        etc...
       </p>
     </main>
     <Footer />
